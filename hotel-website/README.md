@@ -1,0 +1,2 @@
+# hotel-website
+This is a sample hotel website. It includes multiple web pages. Home page, About page and a Contact page.
