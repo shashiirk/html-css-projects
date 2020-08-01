@@ -221,7 +221,7 @@ footer .foot {
 
 #reviews-container {
   background: url(img/test-bg.jpg) no-repeat center center / cover;
-  height: 640px;
+  height: 100%;
   width: 100%;
   background-color: #0b1b1b;
   line-height: 1.5em;

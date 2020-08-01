@@ -18,20 +18,15 @@
 
 .nav-bar h2,
 .nav-bar ul li {
-  border-bottom: 1px #888 dotted;
+  border-bottom: 1px #666 solid;
 }
 
 .nav-bar ul li:last-child {
   border-bottom: none;
 }
 
-#home-page {
-  height: 76vh;
-  overflow: hidden;
-}
-
 .container2 {
-  padding-top: 15vh;
+  padding: 100px;
 }
 
 .heading {
@@ -64,16 +59,26 @@
   width: 100%;
 }
 
+.about-content h2 {
+  text-align: center;
+}
+
 .about-img {
   float: none;
   width: 80%;
   margin: auto;
 }
 
-#reviews-container {
-  height: 100%;
-}
-
 .review-class h1 {
   line-height: 2.5rem;
+}
+
+form input, form textarea {
+  width: 99%;
+}
+
+.details .box {
+  float: none;
+  width: 100%;
+  border-bottom: 1px solid #333;
 }
