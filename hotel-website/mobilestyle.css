@@ -16,6 +16,7 @@
   padding: 10px;
 }
 
+.nav-bar h2,
 .nav-bar ul li {
   border-bottom: 1px #888 dotted;
 }
@@ -56,4 +57,23 @@
 #features-container .features .box {
   float: none;
   width: 100%;
+}
+
+.about-content {
+  float: none;
+  width: 100%;
+}
+
+.about-img {
+  float: none;
+  width: 80%;
+  margin: auto;
+}
+
+#reviews-container {
+  height: 100%;
+}
+
+.review-class h1 {
+  line-height: 2.5rem;
 }
