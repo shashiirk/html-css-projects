@@ -1,0 +1,59 @@
+.nav-bar {
+  text-align: center;
+}
+
+.container1 {
+  padding: 0px;
+}
+
+.nav-bar h2,
+.nav-bar ul,
+.nav-bar ul li {
+  float: none;
+}
+
+.nav-bar ul li a {
+  padding: 10px;
+}
+
+.nav-bar ul li {
+  border-bottom: 1px #888 dotted;
+}
+
+.nav-bar ul li:last-child {
+  border-bottom: none;
+}
+
+#home-page {
+  height: 76vh;
+  overflow: hidden;
+}
+
+.container2 {
+  padding-top: 15vh;
+}
+
+.heading {
+  line-height: 3rem;
+}
+
+#home-container {
+  height: 100%;
+}
+
+#home-container .img-info {
+  float: none;
+  background: none;
+  width: 0%;
+  min-height: 0%;
+}
+
+#home-container .content-info {
+  float: none;
+  width: 100%;
+}
+
+#features-container .features .box {
+  float: none;
+  width: 100%;
+}
