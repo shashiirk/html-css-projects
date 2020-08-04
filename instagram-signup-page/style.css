@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#SignupContainer {
+  border: 1px solid #ddd;
+  width: 350px;
+  margin: 12px auto;
+  background-color: #fff;
+  overflow: visible;
+}
+
+.signupBox {
+  padding: 0px 40px;
+}
+
+header h2 {
+  font-family: 'Amita', cursive;
+  font-size: 40px;
+  margin: 15px 0px 5px;
+  text-align: center;
+  color: #262626;
+}
+
+header p {
+  text-align: center;
+  line-height: 20px;
+  color: #8e8e8e;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+header button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 32px;
+  margin: 20px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+header button img {
+  position: relative;
+  top: 3px;
+}
+
+header button:active {
+  opacity: 0.6;
+}
+
+.seperator {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.seperator hr {
+  width: 41%;
+  display: inline-block;
+  border-top: 1px #dbdbdb solid;
+}
+
+.seperator hr:first-child {
+  margin-right: 5%;
+}
+
+.seperator hr:last-child {
+  margin-left: 5%;
+}
+
+form input {
+  width: 100%;
+  height: 38px;
+  margin: 3px 0px;
+  padding: 10px 8px;
+  border: 1px #dbdbdb solid;
+  border-radius: 4px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #999;
+}
+
+form button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 32px;
+  margin: 10px 0px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  opacity: 0.4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.signupBox footer {
+  font-size: 12px;
+  color: #8e8e8e;
+  text-align: center;
+  padding: 10px 10px 40px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-weight: 600;
+}
+
+#BottomContainer {
+  border: 1px solid #ddd;
+  width: 350px;
+  margin: 10px auto 20px;
+  overflow: auto;
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+#BottomContainer p {
+  margin: 25px;
+}
+
+#BottomContainer p a {
+  text-decoration: none;
+  color: #0095f6;
+}
+
+#AppsContainer {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 25px;
+  width: 350px;
+  margin: 0px auto 40px;
+}
+
+#AppsContainer img {
+  display: inline-block;
+  height: auto;
+  width: 40%;
+  padding: 20px 2px;
+  cursor: pointer;
+}
+
+#LastContainer {
+  margin: 0px auto 40px;
+  width: 80%;
+}
+
+#LastContainer .links {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 70%;
+}
+
+#LastContainer .links a {
+  text-decoration: none;
+  color: #00376b;
+  padding: 0px 8px;
+}
+
+#LastContainer .copyright {
+  display: inline-block;
+  width: 29%;
+  text-align: center;
+}
+
+#LastContainer .copyright p {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #AppsContainer {
+    margin-bottom: 12px;
+  }
+  #LastContainer {
+    margin: 0px auto;
+  }
+
+  #LastContainer .links,
+  #LastContainer .copyright {
+    margin: 2px auto;
+    width: 100%;
+  }
+
+  #LastContainer .copyright p {
+    margin-bottom: 10px;
+  }
+}
