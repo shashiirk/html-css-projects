@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.primary-text {
+  color: #ff2500;
+}
+
+.btn {
+  background-color: #ff2500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin: 40px;
+  padding: 10px 30px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+header {
+  background: #fff url("./img/home/backdrop.jpg") no-repeat center center / cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: none;
+  padding: 30px;
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  top: 0%;
+  opacity: 0.8;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title h1 {
+  font-weight: 400;
+}
+
+.items ul {
+  display: flex;
+}
+
+.items a {
+  margin: 0px 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.items a:hover {
+  border-bottom: 2px solid #ff2500;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 20px;
+  margin: 0px 20px;
+  line-height: 1.6;
+}
+
+.content h1 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+header * {
+  z-index: 2;
+}
