@@ -34,11 +34,11 @@ a {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 header {
-  background: #fff url("./img/home/backdrop.jpg") no-repeat center center / cover;
+  background: #fff url("./img/backdrop.jpg") no-repeat center center / cover;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -48,14 +48,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: none;
   padding: 30px;
   width: 100%;
   height: 70px;
   color: #fff;
   position: fixed;
   top: 0%;
-  opacity: 0.8;
 }
 
 .title {
@@ -73,9 +71,9 @@ header {
 }
 
 .items a {
-  margin: 0px 5px;
+  margin: 0px 10px;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 18px;
 }
 
@@ -83,7 +81,7 @@ header {
   border-bottom: 2px solid #ff2500;
 }
 
-.content {
+header .content {
   color: white;
   text-align: center;
   display: flex;
@@ -96,12 +94,12 @@ header {
   line-height: 1.6;
 }
 
-.content h1 {
+header .content h1 {
   font-weight: 400;
   font-size: 4rem;
 }
 
-.content p {
+header .content p {
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -118,4 +116,66 @@ header::before {
 
 header * {
   z-index: 2;
+}
+
+#features {
+  font-size: 18px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20px 5px;
+}
+
+.feature-box {
+  text-align: center;
+  height: 100%;
+  width: 33%;
+  padding: 10px;
+  line-height: 1.4;
+}
+
+.feature-box h3 {
+  padding: 10px;
+}
+
+.feature-box .icon {
+  padding: 20px;
+  margin: 10px 0px;
+  background-color: #ff2500;
+  color: #fff;
+  border-radius: 50%;
+}
+
+#about {
+  display: flex;
+  font-size: 20px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#about .content {
+  background-color: #ff2500;
+  color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  width: 60%;
+}
+
+#about .content h1 {
+  font-size: 2.5rem;
+}
+
+#about .content a {
+  color: #ff2500;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0px;
+  width: fit-content;
+}
+
+#about img {
+  width: 40%;
 }
