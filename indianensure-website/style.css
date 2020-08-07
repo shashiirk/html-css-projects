@@ -48,7 +48,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   width: 100%;
   height: 70px;
   color: #fff;
@@ -66,18 +66,18 @@ header {
   font-weight: 400;
 }
 
-.items ul {
+#navbar .items ul {
   display: flex;
 }
 
-.items a {
+#navbar .items a {
   margin: 0px 10px;
   color: #fff;
   padding: 10px 10px;
   font-size: 18px;
 }
 
-.items a:hover {
+#navbar .items a:hover {
   border-bottom: 2px solid #ff2500;
 }
 
@@ -115,22 +115,21 @@ header::before {
 }
 
 header * {
-  z-index: 2;
+  z-index: 10;
 }
 
 #features {
   font-size: 18px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row no-wrap;
   justify-content: space-around;
-  padding: 20px 5px;
+  padding: 20px 5px 40px;
 }
 
 .feature-box {
   text-align: center;
   height: 100%;
-  width: 33%;
-  padding: 10px;
+  padding: 15px;
   line-height: 1.4;
 }
 
@@ -149,7 +148,7 @@ header * {
 #about {
   display: flex;
   font-size: 20px;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
@@ -160,12 +159,17 @@ header * {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  padding: 25px;
+  padding: 10px 20px;
   width: 60%;
 }
 
 #about .content h1 {
   font-size: 2.5rem;
+  color: #000;
+}
+
+#about .content p {
+  padding: 0px 20px;
 }
 
 #about .content a {
@@ -176,6 +180,186 @@ header * {
   width: fit-content;
 }
 
+#about .content * {
+  margin: 20px 0px;
+}
+
 #about img {
   width: 40%;
+  object-fit: cover;
+}
+
+#team {
+  text-align: center;
+  padding: 10px;
+}
+
+#team .heading {
+  font-size: 1.5rem;
+  margin: 20px 0px 30px;
+}
+
+#team .heading * {
+  padding: 10px 0px;
+}
+
+#team .person-box {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+}
+
+#team .person {
+  padding: 10px;
+}
+
+#team .person h3 {
+  padding-bottom: 8px;
+  font-size: 1.6rem;
+}
+
+#team img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+  margin-bottom: 18px;
+  background-color: #ff2500;
+  border-radius: 50%;
+}
+
+#team .heading h1 {
+  color: #ff2500;
+}
+
+#contact {
+  display: flex;
+}
+
+#contact img {
+  object-fit: cover;
+  width: 40%;
+}
+
+#contact .content {
+  background-color: #e6e7e6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#contact .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#contact form input {
+  font-size: 14px;
+  width: 75%;
+  padding: 10px;
+  border: 1px #fff solid;
+  outline: none;
+  margin: 10px 0px;
+}
+
+#contact form input:focus {
+  border: 1px #ff2500 solid;
+}
+
+#contact form input[type="submit"] {
+  text-align: center;
+  width: 75%;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #ff2500;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  background: #2f2f2f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer .icons {
+  padding: 10px;
+}
+
+footer .icons i {
+  padding: 0px 10px;
+}
+
+footer .icons i:hover {
+  color: #ff2500;
+}
+
+footer .note {
+  padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #navbar .items a {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar .items {
+    margin: 20px 0px;
+  }
+
+  #navbar .items a {
+    padding: 5px;
+  }
+
+  header .content h1 {
+    line-height: 1.2;
+    margin-top: 80px;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  #about img, #about .content {
+    width: 100%;
+  }
+
+  #team .person-box {
+    flex-direction: column;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact img {
+    width: 100%;
+  }
+
+  #contact form input,
+  #contact form input[type="submit"] {
+    width: 100%;
+  }
 }
