@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Indian Ensure is a fictional company which provides world class financial services to a substantial and a diversified client base.">
+  <meta name="description"
+    content="Indian Ensure is a fictional company which provides world class financial services to a substantial and a diversified client base.">
+  <link rel="short icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
   <title>Indian Ensure | Financial Services</title>
 </head>
+
 <body id="home">
   <header>
     <div id="navbar">
@@ -52,7 +57,8 @@
     <div class="content">
       <h1>What we do?</h1>
       <p>
-        We are the world's leading organization to provide excellent financial services. We provide services such as Asset Management, Investment Banking, Mutual Funds and other financial services to our clients.
+        We are the world's leading organization to provide excellent financial services. We provide services such as
+        Asset Management, Investment Banking, Mutual Funds and other financial services to our clients.
       </p>
       <a class="btn" href="#about">Read More</a>
     </div>
@@ -104,5 +110,43 @@
       <p>&copy; 2020 Indian Ensure</p>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    const navbar = document.getElementById("navbar");
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.add("top");
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      }
+      else {
+        navbar.classList.remove("top");
+        scrolled = false;
+      }
+    }
+
+    $('#navbar a').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top - 100,
+          },
+          800
+        );
+      }
+    });
+  </script>
 </body>
+
 </html>

@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -54,6 +55,11 @@ header {
   color: #fff;
   position: fixed;
   top: 0%;
+  transition-duration: 0.5s;
+}
+
+#navbar.top {
+  background-color: rgba(47, 47, 47, 0.95);
 }
 
 .title {
