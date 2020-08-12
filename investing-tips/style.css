@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  margin: 20px 0px;
+}
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.buttons {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.buttons a {
+  display: inline-block;
+  border-radius: 24px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0px 1px;
+  transition: all 400ms ease-in-out;
+}
+
+.buttons a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+#page-1 { background-color: #0084ff; }
+
+#page-1 .heading {
+  position: relative;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes drop {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+#page-1 .content {
+  position: relative;
+  animation-name: scroll;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll {
+  from {
+    left: -1800px
+  }
+  to {
+    left: 0px;
+  }
+}
+
+#page-1 .buttons {
+  position: relative;
+  animation-name: rise;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rise {
+  from {
+    top: 800px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+#page-2 { background-color: #3699a1; }
+
+#page-3 { background-color: #e5af00; }
+
+#page-4 { background-color: #fa3c4c; }
+
+#page-5 { background-color: #576675; }
+
+#page-6 { background-color: #40990f; }
+
+#page-6 .content a {
+  text-decoration: none;
+  color: #003366;
+}
