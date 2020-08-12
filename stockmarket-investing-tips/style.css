@@ -124,3 +124,7 @@ body {
   text-decoration: none;
   color: #003366;
 }
+
+#page-6 .content a:hover {
+  text-decoration: underline;
+}
