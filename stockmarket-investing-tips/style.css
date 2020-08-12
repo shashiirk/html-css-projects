@@ -55,6 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 100px;
+  overflow: hidden;
 }
 
 #page-1 { background-color: #0084ff; }
