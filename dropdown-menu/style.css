@@ -11,13 +11,13 @@ body {
 
 #navbar {
   background-color: #ff6f69;
-  display: flex;
-  justify-content: flex-end;
   padding: 0px 10px;
 }
 
 #navbar ul {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #navbar ul li {
@@ -57,4 +57,27 @@ body {
 
 #navbar ul li:hover ul li a {
   color: #000;
+}
+
+@media (max-width: 400px) {
+  #navbar {
+    padding: 0px;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+  }
+
+  #navbar ul li {
+    display: block;
+    border-bottom: 1px #888 solid;
+  }
+
+  #navbar ul li:hover ul {
+    position: relative;
+  }
+
+  #navbar ul li:hover ul li {
+    text-align: center;
+  }
 }
