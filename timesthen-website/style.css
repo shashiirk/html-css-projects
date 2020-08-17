@@ -97,7 +97,7 @@ a {
 }
 
 #main-area .container {
-  margin: 14px 0px;
+  margin: 18px 0px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 14px;
@@ -126,7 +126,7 @@ a {
 }
 
 #main-area .container .article .image img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #main-area .container .article .info {
@@ -143,4 +143,97 @@ a {
 
 #main-area .container .article .info a:hover {
   color: #003366;
+}
+
+#foot-bar {
+  border: 1px black solid;
+  background-color: #00182d;
+}
+
+#foot-bar .container {
+  width: 75vw;
+  margin: auto;
+  border: 1px red solid;
+  color: #fff;
+  display: grid;
+  overflow: hidden;
+  grid-template-areas: 
+    'feature subscribe follow app';
+}
+
+#foot-bar .container .feature {
+  grid-area: feature;
+  border: 1px blue solid;
+  padding: 10px;
+}
+
+#foot-bar .container .feature .logo {
+  border: 1px green solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foot-bar .container .feature .logo .title {
+  font-family: 'Solway', serif;
+  padding: 0px 10px;
+  color: #00fff9;
+}
+
+#foot-bar .container .feature .logo .image {
+  width: 28px;
+  height: 28px;
+}
+
+#foot-bar .container .feature .content {
+  margin: 10px 0px;
+  border: 1px green solid;
+}
+
+#foot-bar .container .subscribe {
+  grid-area: subscribe;
+  border: 1px blue solid;
+  padding: 10px;
+}
+
+#foot-bar .container .subscribe input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 14px 0px 0px;
+  border: 2px #fff solid;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+#foot-bar .container .subscribe input:focus {
+  border: 2px #ff0006 solid;
+}
+
+#foot-bar .container .subscribe input[type='submit'] {
+  background-color: #00ff7a;
+  margin-top: 4px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-weight: bold;
+  color: #00182d;
+  cursor: pointer;
+}
+
+#foot-bar .container .subscribe input[type='submit']:hover {
+  background-color: #34aa6d;
+}
+
+#foot-bar .container .follow {
+  grid-area: follow;
+  border: 1px blue solid;
+  padding: 10px;
+}
+
+#foot-bar .container .app {
+  grid-area: app;
+  border: 1px blue solid;
+  padding: 10px;
 }
