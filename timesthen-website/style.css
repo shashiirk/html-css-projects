@@ -25,11 +25,14 @@ a {
 }
 
 #header {
-  border: 1px black solid;
   background-color: #00182d;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-#header .container {
+#header .headbar .container {
   width: 214px;
   margin: auto;
   padding: 12px 0px;
@@ -37,47 +40,47 @@ a {
   justify-content: space-between;
 }
 
-#header .container .image {
+#header .headbar .container .image {
   margin-top: 3px;
   width: 32px;
   height: 32px;
 }
 
-#header .container .title {
+#header .headbar .container .title {
   font-family: 'Solway', serif;
   color: #00fff9;
 }
 
-#navbar {
+#header .navbar {
   background-color: #00fff9;
 }
 
-#navbar .container {
+#header .navbar .container {
   width: 75vw;
   margin: auto;
 }
 
-#navbar .container ul {
+#header .navbar .container ul {
   display: grid;
-  grid-template-columns: repeat(10, auto);
+  grid-template-columns: repeat(10, 1fr);
   overflow: hidden;
 }
 
-#navbar .container ul li {
+#header .navbar .container ul li {
   transition: all 400ms ease;
   border-bottom: 3px #00fff9 solid;
 }
 
-#navbar .container ul li.current {
+#header .navbar .container ul li.current {
   border-bottom-color: #00182d;
 }
 
-#navbar .container ul li:hover {
+#header .navbar .container ul li:hover {
   background-color: #00c8c8;
   border-bottom-color: #00c8c8;
 }
 
-#navbar .container ul li a {
+#header .navbar .container ul li a {
   display: block;
   padding: 10px;
   text-align: center;
@@ -87,7 +90,7 @@ a {
 
 #main-area {
   width: 75vw;
-  padding: 20px 0px;
+  padding: 20px 0px 20px;
   margin: auto;
 }
 
@@ -152,23 +155,18 @@ a {
 
 #foot-bar .container {
   width: 75vw;
-  margin: auto;
-  border: 1px red solid;
+  margin: 10px auto;
   color: #fff;
   display: grid;
   overflow: hidden;
-  grid-template-areas: 
-    'feature subscribe follow app';
+  grid-template-columns: 1.6fr 1.6fr 1fr 1fr;
 }
 
 #foot-bar .container .feature {
-  grid-area: feature;
-  border: 1px blue solid;
   padding: 10px;
 }
 
 #foot-bar .container .feature .logo {
-  border: 1px green solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,12 +185,9 @@ a {
 
 #foot-bar .container .feature .content {
   margin: 10px 0px;
-  border: 1px green solid;
 }
 
 #foot-bar .container .subscribe {
-  grid-area: subscribe;
-  border: 1px blue solid;
   padding: 10px;
 }
 
@@ -227,13 +222,61 @@ a {
 }
 
 #foot-bar .container .follow {
-  grid-area: follow;
-  border: 1px blue solid;
   padding: 10px;
+  text-align: center;
+}
+
+#foot-bar .container .icons {
+  margin-top: 18px;
+}
+
+#foot-bar .container .icons .icon {
+  display: inline-block;
+  margin: 4px;
+}
+
+#foot-bar .container .icons .icon i {
+  cursor: pointer;
+}
+
+#foot-bar .container .follow .icons i.fa-facebook:hover {
+  color: #3b7998;
+}
+
+#foot-bar .container .follow .icons i.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+#foot-bar .container .follow .icons i.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+#foot-bar .container .follow .icons i.fa-youtube:hover {
+  color: #ff0000;
 }
 
 #foot-bar .container .app {
-  grid-area: app;
-  border: 1px blue solid;
   padding: 10px;
+  text-align: center;
+}
+
+#foot-bar .container .app .icons .icon {
+  margin: 4px 10px;
+}
+
+#foot-bar .container .app .icons i.fa-android:hover {
+  color: #a4c639;
+}
+
+#foot-bar .container .app .icons i.fa-apple:hover {
+  color: #a6b1b7;
+}
+
+#foot-bar .container .copyright {
+  background-color: #002f42;
+  margin: 10px 0px 0px;
+  padding: 18px;
+  text-align: center;
+  font-weight: 500;
+  grid-column: 1 / span 4;
 }

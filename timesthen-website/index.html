@@ -7,31 +7,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Solway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <title>Times Then | Daily News</title>
 </head>
 <body id="home">
-  <header id="header">
-    <div class="container">
-      <img class="image" src="img/logo.png" alt="image">
-      <h1 class="title">TimesThen</h1>
-    </div>
-  </header>
-  <nav id="navbar">
-    <div class="container">
-      <ul>
-        <li class="current"><a href="#home">Home</a></li>
-        <li><a href="#">India</a></li>
-        <li><a href="#">World</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Startup</a></li>
-        <li><a href="#">Entertainment</a></li>
-        <li><a href="#">Automobile</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="header">
+    <header class="headbar">
+      <div class="container">
+        <img class="image" src="img/logo.png" alt="image">
+        <h1 class="title">TimesThen</h1>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container">
+        <ul>
+          <li class="current"><a href="#home">Home</a></li>
+          <li><a href="#">India</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Startup</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Automobile</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <main id="main-area">
     <h1 class="heading">Editor Picks</h1>
     <hr>
@@ -101,7 +104,7 @@
           <h1 class="title">TimesThen</h1>
         </div>
         <p class="content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, vero.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magni eos iste id eveniet corporis ex facere aut voluptatibus at!
         </p>
       </div>
       <div class="subscribe">
@@ -117,18 +120,23 @@
       <div class="follow">
         <h2 class="title">Follow us</h2>
         <div class="icons">
-          <i class="fab fa-facebook fa-2x"></i>
-          <i class="fab fa-twitter fa-2x"></i>
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fab fa-youtube fa-2x"></i>
+          <div class="icon"><i class="fab fa-facebook fa-2x"></i></div>
+          <div class="icon"><i class="fab fa-twitter fa-2x"></i></div>
+          <div class="icon"><i class="fab fa-instagram fa-2x"></i></div>
+          <div class="icon"><i class="fab fa-youtube fa-2x"></i></div>
         </div>
       </div>
       <div class="app">
         <h2 class="title">Mobile Apps</h2>
         <div class="icons">
-          <i class="fab fa-android fa-2x"></i>
-          <i class="fab fa-apple fa-2x"></i>
+          <div class="icon"><i class="fab fa-android fa-2x"></i></div>
+          <div class="icon"><i class="fab fa-apple fa-2x"></i></div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2020 TimesThen
+        </p>
       </div>
     </div>
   </footer>
