@@ -281,3 +281,39 @@ a {
   font-weight: 500;
   grid-column: 1 / span 4;
 }
+
+#article-area .article-card {
+  background-color: #fff;
+  width: 75vw;
+  margin: 30px auto;
+  padding: 20px 5px;
+}
+
+#article-area .article-card .title h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #00182d;
+}
+
+#article-area .article-card .info {
+  margin: 14px 0px;
+  display: flex;
+  align-items: center;
+}
+
+#article-area .article-card .info .box {
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#article-area .article-card .info .box p a {
+  color: #000;
+  font-style: italic;
+  border-bottom: 1px #000 dotted;
+}
+
+#article-area .article-card .info .box p:last-child {
+  color: #4f4f4f;
+  padding-top: 4px;
+}
