@@ -13,8 +13,8 @@ header {
 }
 
 .container {
+  border: 1px red solid;
   background-color: #77b3ac;
-  width: 840px;
   font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@ header {
   text-align: center;
   padding: 20px 0px;
   margin: auto;
+  width: 100%;
 }
 
 .container .heading {
@@ -50,8 +51,19 @@ main {
 }
 
 .timeline {
-  width: 800px;
-  margin: 38px auto;
+  max-width: 100%;
+  margin: 40px 14px;
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  width: 4px;
+  background-color: #77b3ac;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
 }
 
 .timeline ul {
@@ -59,8 +71,7 @@ main {
 }
 
 .company {
-  width: 400px;
-  margin: auto;
+  width: 50%;
   padding: 20px 0px;
   display: flex;
   justify-content: center;
@@ -68,9 +79,18 @@ main {
 }
 
 .company.left {
-  border-right: 4px #77b3ac solid;
   flex-direction: row-reverse;
-  left: -198px;
+  left: 0;
+}
+
+.company.left::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: #77b3ac;
+  position: absolute;
+  top: 44px;
+  right: 0;
 }
 
 .company.left .content {
@@ -80,71 +100,45 @@ main {
 }
 
 .company.right {
-  border-left: 4px #77b3ac solid;
-  left: 198px;
+  left: 50%;
+}
+
+.company.right::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: #77b3ac;
+  position: absolute;
+  top: 44px;
+  left: 0;
 }
 
 .company .icon {
-  display: inline-block;
+  display: block;
   width: 54px;
   height: 54px;
-  margin: 0px 10px;
-  padding: 10px 2px 0px;
+  padding: 8px 10px 10px;
   background-color: #fff;
   color: #001a33;
   text-align: center;
   border-radius: 8px;
-  position: relative;
+  font-size: 18px;
 }
 
-.company.left .icon::after {
-  content: '';
-  width: 36px;
-  height: 4px;
-  background-color: #77b3ac;
-  position: absolute;
-  top: 46%;
-  left: 100%;
+.company.left .icon {
+  margin-right: 30px;
 }
 
-.company.right .icon::before {
-  content: '';
-  width: 36px;
-  height: 4px;
-  background-color: #77b3ac;
-  position: absolute;
-  top: 46%;
-  right: 100%;
-}
-
-.company:first-child::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-color: #77b3ac;
-  position: absolute;
-  left: 385px;
-  top: -24px;
-  border-radius: 50%;
-}
-
-.company:last-child::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-color: #77b3ac;
-  position: absolute;
-  right: 385px;
-  bottom: -24px;
-  border-radius: 50%;
+.company.right .icon {
+  margin-left: 30px;
 }
 
 .company .content {
-  width: 250px;
-  margin: 0px 10px;
+  margin: 0px 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .company .content .year {
@@ -158,9 +152,102 @@ main {
   color: #77b3ac;
   font-weight: 600;
   font-size: 20px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 
 .company .content .info {
   color: #fff;
+}
+
+.timeline .company:first-child::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #77b3ac;
+  border-radius: 50%;
+  position: absolute;
+  top: -32px;
+  right: -18px;
+}
+
+.timeline .company:last-child::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #77b3ac;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -32px;
+  left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .container .heading {
+    font-size: 20vw;
+  }
+
+  .container hr {
+    width: 100%;
+  }
+
+  .timeline::after {
+    left: 14px;
+  }
+
+  .company {
+    width: 100%;
+  }
+
+  .company.left,
+  .company.right {
+    left: 0px;
+  }
+
+  .company.left {
+    flex-direction: row;
+  }
+
+  .company.left .icon {
+    margin-right: 0;
+    margin-left: 44px;
+  }
+
+  .company.left .content {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .company.left::after {
+    left: 14px;
+  }
+
+  .company.right .icon {
+    margin-right: 0;
+    margin-left: 44px;
+  }
+
+  .company.right::after {
+    left: 14px;
+  }
+
+  .company.left:first-child::before {
+    left: 0px;
+  }
+
+  .company.right:last-child::before {
+    left: 0px;
+  }
+
+  .company .content .year {
+    font-size: 8vw;
+  }
+
+  .company .content .title {
+    font-size: 6vw;
+  }
+
+  .company .content .info {
+    font-size: 14px;
+  }
 }
