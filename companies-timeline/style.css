@@ -13,7 +13,6 @@ header {
 }
 
 .container {
-  border: 1px red solid;
   background-color: #77b3ac;
   font-family: 'Quicksand', sans-serif;
   display: flex;
