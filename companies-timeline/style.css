@@ -113,15 +113,15 @@ main {
 }
 
 .company .icon {
-  display: block;
-  width: 54px;
-  height: 54px;
-  padding: 8px 10px 10px;
+  display: inline-flexbox;
+  width: 80px;
+  height: fit-content;
+  padding: 4px 10px;
   background-color: #fff;
   color: #001a33;
   text-align: center;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 38px;
 }
 
 .company.left .icon {
@@ -186,7 +186,7 @@ main {
   }
 
   .container hr {
-    width: 100%;
+    width: 88%;
   }
 
   .timeline::after {
