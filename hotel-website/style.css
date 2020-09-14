@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #0246cf;
+  --secondary-color: #58d422;
+  --tertiary-color: #021248;
+  --light-text-color: #fff;
+  --dark-text-color: #000424;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,28 +13,29 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .container1 {
   margin: auto;
-  max-width: 1100px;
+  width: 75%;
   overflow: auto;
 }
 
 .nav-bar {
-  background-color: #2f4f4f;
+  background-color: var(--primary-color);
   overflow: auto;
 }
 
 .nav-bar h2 {
   float: left;
-  padding: 20px 0px;
+  padding: 10px 0;
 }
 
 .nav-bar h2 a {
   text-decoration: none;
-  color: white;
+  color: var(--light-text-color);
+  font-size: 32px;
 }
 
 .nav-bar ul {
@@ -41,23 +50,24 @@ body {
 .nav-bar ul li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: var(--light-text-color);
   text-align: center;
-  padding: 25px 20px;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .nav-bar ul li a:hover,
 .nav-bar ul li .current-page {
-  background-color: #487272;
-  color: orange;
-  transition-duration: 0.5s;
+  background-color: #4268b6;
+  transition-duration: 600ms;
 }
 
 #home-page {
   background: url(img/showcase.jpg) no-repeat center center / cover;
   height: 600px;
   width: 100%;
-  background-color: #0b1b1b;
+  background-color: #768dbb;
 }
 
 .container2 {
@@ -68,7 +78,7 @@ body {
 
 .heading {
   font-size: 1.8em;
-  color: white;
+  color: var(--light-text-color);
   padding: 10px;
 }
 
@@ -77,38 +87,40 @@ body {
 }
 
 .primary-text {
-  color: orange;
+  color: var(--secondary-color);
 }
 
 #home-page p {
   padding: 20px;
-  color: white;
+  color: var(--light-text-color);
   font-size: 20px;
 }
 
 #home-page a {
   display: inline-block;
   text-decoration: none;
-  background-color: #2f4f4f;
-  color: white;
-  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 14px;
   margin: 10px;
+  font-weight: 500;
   border: none;
+  border-radius: 8px;
+  transition: background 400ms ease-in-out;
 }
 
 #home-page a:hover {
-  background-color: sandybrown;
-  color: #2f4f4f;
+  background-color: var(--secondary-color);
 }
 
 #home-container {
-  height: 400px;
+  height: 380px;
   overflow: hidden;
 }
 
 #home-container .img-info {
   float: left;
-  background: url(img/photo-1.jpg) no-repeat;
+  background: url(img/photo-1.jpg) no-repeat center center / cover;
   width: 50%;
   min-height: 100%;
 }
@@ -118,38 +130,42 @@ body {
   min-height: 100%;
   width: 50%;
   text-align: center;
-  background-color: #274444;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
   padding: 40px;
   line-height: 1.6em;
 }
 
 #home-container .content-info h2 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 #home-container .content-info p {
-  padding: 40px 0px;
+  padding: 40px 0;
+  font-size: 20px;
 }
 
 #home-container .content-info a {
   text-decoration: none;
   display: inline-block;
-  background-color: aliceblue;
-  color: #0b1b1b;
+  background-color: var(--light-text-color);
+  color: var(--dark-text-color);
   border: none;
-  margin-top: 20px;
-  padding: 10px 20px;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 700;
+  transition: background 400ms ease-in-out;
 }
 
 #home-container .content-info a:hover {
-  background-color: sandybrown;
+  background-color: var(--secondary-color);
 }
 
 #features-container .features .box {
   float: left;
   width: 33.3%;
   padding: 30px;
+  color: var(--dark-text-color);
 }
 
 .features {
@@ -158,11 +174,17 @@ body {
 }
 
 .features .box h3 {
+  font-size: 28px;
   padding: 25px;
 }
 
+.features .box p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .features .box:nth-child(2) {
-  background-color: sandybrown;
+  background-color: var(--secondary-color);
 }
 
 .clr {
@@ -171,14 +193,19 @@ body {
 
 footer .foot {
   text-align: center;
-  background-color: #274444;
-  color: white;
-  padding: 30px;
+  background-color: var(--tertiary-color);
+  color: var(--light-text-color);
+  padding: 14px;
+}
+
+footer .foot p {
+  font-size: 14px;
 }
 
 #about-container {
-  padding: 20px;
-  background-color: azure;
+  padding: 20px 0;
+  background-color: var(--light-text-color);
+  color: var(--dark-text-color);
   overflow: hidden;
   margin: auto;
   line-height: 1.6em;
@@ -186,8 +213,8 @@ footer .foot {
 
 .about-box {
   overflow: hidden;
-  margin: 0px auto;
-  max-width: 1100px;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .about-content {
@@ -202,6 +229,11 @@ footer .foot {
   font-size: 40px;
   line-height: 1.2em;
   padding-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .about-img {
@@ -225,7 +257,7 @@ footer .foot {
   width: 100%;
   background-color: #0b1b1b;
   line-height: 1.5em;
-  padding-top: 50px;
+  padding: 40px 10px;
 }
 
 .review-class {
@@ -235,17 +267,17 @@ footer .foot {
 
 .review-class h1 {
   font-size: 40px;
-  color: white;
-  margin: 30px auto;
+  color: var(--light-text-color);
+  margin-bottom: 38px;
 }
 
 .review-box {
   width: 80%;
   overflow: hidden;
   border-radius: 10px;
-  background-color: darkseagreen;
-  color: #081818;
-  margin: 30px auto;
+  background-color: #84a0dd;
+  color: var(--dark-text-color);
+  margin: 24px auto;
 }
 
 .review-box img {
@@ -259,6 +291,7 @@ footer .foot {
   width: 100%;
   text-align: justify;
   padding: 20px;
+  font-weight: 500;
 }
 
 .contact-container {
@@ -281,7 +314,7 @@ form label {
 }
 
 form input, form textarea {
-  border: 1px solid #999;
+  border: 1.4px solid #999;
   border-radius: 2px;
   width: 50%;
   padding: 10px;
@@ -294,7 +327,7 @@ form textarea {
 
 form input:focus, form textarea:focus {
   outline: none;
-  border-color: sandybrown;
+  border-color: var(--secondary-color);
 }
 
 
@@ -303,22 +336,22 @@ form input[type="submit"] {
   display: block;
   text-align: center;
   height: 50px;
-  background-color: #0b1b1b;
+  background-color: var(--primary-color);
   border: none;
-  color: white;
+  border-radius: 8px;
+  color: var(--light-text-color);
   font-size: 18px;
   cursor: pointer;
   margin: 10px 0px;
 }
 
 form input[type="submit"]:hover {
-  background-color: sandybrown;
-  color: #0b1b1b;
+  background-color: #0858f8;
 }
 
 #details-container .details {
-  background-color: #081818;
-  color: white;
+  background-color: #09288b;
+  color: var(--light-text-color);
   overflow: auto;
   text-align: center;
 }
@@ -335,5 +368,11 @@ form input[type="submit"]:hover {
 }
 
 .details .box h2 {
+  font-size: 28px;
   padding: 20px 0px;
+}
+
+.details .box p {
+  font-size: 18px;
+  font-weight: 500;
 }
