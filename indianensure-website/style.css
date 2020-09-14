@@ -194,7 +194,7 @@ header * {
 
 #team {
   text-align: center;
-  padding: 10px;
+  padding: 25px 10px;
 }
 
 #team .heading {
@@ -202,8 +202,8 @@ header * {
   margin: 20px 0px 30px;
 }
 
-#team .heading * {
-  padding: 10px 0px;
+#team .heading h1 {
+  padding-bottom: 25px;
 }
 
 #team .person-box {
@@ -211,7 +211,7 @@ header * {
   flex-flow: row no-wrap;
   justify-content: space-around;
   width: 100%;
-  padding: 10px;
+  padding: 0 10px;
   overflow: auto;
 }
 
