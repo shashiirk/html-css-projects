@@ -90,7 +90,7 @@ a {
 }
 
 #main-area {
-  width: 75vw;
+  width: 75%;
   padding: 20px 0px 20px;
   margin: auto;
 }
@@ -150,21 +150,20 @@ a {
 }
 
 #foot-bar {
-  border: 1px black solid;
   background-color: #00182d;
 }
 
 #foot-bar .container {
-  width: 75vw;
-  margin: 10px auto;
+  width: 75%;
+  margin: auto;
   color: #fff;
   display: grid;
   overflow: hidden;
-  grid-template-columns: 1.6fr 1.6fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1.4fr 1fr 1fr;
 }
 
 #foot-bar .container .feature {
-  padding: 10px;
+  padding: 14px;
 }
 
 #foot-bar .container .feature .logo {
@@ -189,7 +188,8 @@ a {
 }
 
 #foot-bar .container .subscribe {
-  padding: 10px;
+  text-align: center;
+  padding: 14px;
 }
 
 #foot-bar .container .subscribe input {
@@ -223,7 +223,7 @@ a {
 }
 
 #foot-bar .container .follow {
-  padding: 10px;
+  padding: 14px;
   text-align: center;
 }
 
@@ -257,7 +257,7 @@ a {
 }
 
 #foot-bar .container .app {
-  padding: 10px;
+  padding: 14px;
   text-align: center;
 }
 
