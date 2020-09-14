@@ -60,7 +60,7 @@ header {
 }
 
 #navbar.top {
-  background-color: rgba(47, 47, 47, 0.95);
+  background-color: rgba(36, 36, 36, 0.96);
 }
 
 .title {
@@ -118,7 +118,7 @@ header::before {
   left: 0%;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
 }
 
 header * {
@@ -130,7 +130,7 @@ header * {
   display: flex;
   flex-flow: row no-wrap;
   justify-content: space-around;
-  padding: 20px 5px 40px;
+  padding: 30px 5px;
 }
 
 .feature-box {
@@ -146,7 +146,7 @@ header * {
 
 .feature-box .icon {
   padding: 20px;
-  margin: 10px 0px;
+  margin-bottom: 10px;
   background-color: #ff2500;
   color: #fff;
   border-radius: 50%;
@@ -164,9 +164,9 @@ header * {
   color: #fff;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 40px 20px;
   width: 60%;
 }
 
@@ -176,7 +176,7 @@ header * {
 }
 
 #about .content p {
-  padding: 0px 20px;
+  padding: 24px 0 32px;
 }
 
 #about .content a {
@@ -185,10 +185,6 @@ header * {
   background-color: #fff;
   margin: 0px;
   width: fit-content;
-}
-
-#about .content * {
-  margin: 20px 0px;
 }
 
 #about img {
