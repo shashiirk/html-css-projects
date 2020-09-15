@@ -1,84 +1,91 @@
-.nav-bar {
-  text-align: center;
-}
+@media screen and (max-width: 768px) {
+  #home-page {
+    height: 90vh;
+  }
 
-.container1 {
-  padding: 0px;
-}
+  .nav-bar {
+    height: 120px;
+  }
+  
+  .container1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+  }
+  
+  .nav-bar ul {
+    width: 90%;
+    margin: 14px 0 4px;
+  }
 
-.nav-bar h2,
-.nav-bar ul,
-.nav-bar ul li {
-  float: none;
-}
+  .nav-bar ul li {
+    width: 100%;
+  }
 
-.nav-bar ul li a {
-  padding: 10px;
-}
+  .nav-bar ul li a {
+    padding: 0;
+    border-radius: 6px;
+  }
+  
+  .container2 {
+    width: 90%;
+  }
+  
+  .heading {
+    line-height: 3rem;
+  }
+  
+  #home-container .img-info {
+    display: none;
+  }
+  
+  #home-container .content-info {
+    float: none;
+    width: 100%;
+  }
+  
+  #features-container .features {
+    flex-direction: column;
+  }
 
-.nav-bar h2,
-.nav-bar ul li {
-  border-bottom: 1px #666 solid;
-}
+  .about-box {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+  
+  .about-content {
+    width: 100%;
+  }
+  
+  .about-content h2 {
+    text-align: center;
+  }
+  
+  .about-img {
+    width: 100%;
+    margin: auto;
+  }
 
-.nav-bar ul li:last-child {
-  border-bottom: none;
-}
+  .about-img img {
+    width: 100%;
+  }
 
-.container2 {
-  padding: 100px;
-}
+  .review-class .heading,
+  .review-box {
+    width: 90%;
+  }
 
-.heading {
-  line-height: 3rem;
-}
-
-#home-container {
-  height: 100%;
-}
-
-#home-container .img-info {
-  float: none;
-  background: none;
-  width: 0%;
-  min-height: 0%;
-}
-
-#home-container .content-info {
-  float: none;
-  width: 100%;
-}
-
-#features-container .features .box {
-  float: none;
-  width: 100%;
-}
-
-.about-content {
-  float: none;
-  width: 100%;
-}
-
-.about-content h2 {
-  text-align: center;
-}
-
-.about-img {
-  float: none;
-  width: 80%;
-  margin: auto;
-}
-
-.review-class h1 {
-  line-height: 2.5rem;
-}
-
-form input, form textarea {
-  width: 99%;
-}
-
-.details .box {
-  float: none;
-  width: 100%;
-  border-bottom: 1px solid #333;
+  .contact-container {
+    width: 90%;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+  }
+  
+  .details {
+    flex-direction: column;
+  }
 }
