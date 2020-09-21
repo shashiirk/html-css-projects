@@ -42,19 +42,19 @@ header button {
   color: #fff;
   border: none;
   width: 100%;
-  height: 32px;
   margin: 20px 0px;
+  padding: 6px;
   font-size: 14px;
   font-weight: 600;
   border-radius: 4px;
   outline: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   cursor: pointer;
 }
 
-header button img {
-  position: relative;
-  top: 3px;
+.fab {
+  font-size: 18px;
+  margin: 0 8px;
 }
 
 header button:active {
@@ -68,10 +68,18 @@ header button:active {
   margin-bottom: 18px;
 }
 
+.seperator {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
 .seperator hr {
   width: 41%;
   display: inline-block;
   border-top: 1px #dbdbdb solid;
+  position: relative;
+  top: 0;
 }
 
 .seperator hr:first-child {
@@ -83,6 +91,7 @@ header button:active {
 }
 
 form input {
+  font-size: 12px;
   width: 100%;
   height: 38px;
   margin: 3px 0px;
@@ -95,6 +104,10 @@ form input {
 
 form input:focus {
   border-color: #999;
+}
+
+form input::placeholder {
+  color: #9f9f9f;
 }
 
 form button {
