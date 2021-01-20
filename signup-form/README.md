@@ -4,4 +4,4 @@ This is a webpage demonstrating a **signup** form. Click [here](https://codepen.
 
 ## Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/html-css-projects/blob/master/signup-form/preview/signup-form.jpg)
