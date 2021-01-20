@@ -4,4 +4,4 @@ This is a simple webpage demonstrating a dropdown menu. Click [here](https://cod
 
 ## Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/html-css-projects/blob/master/dropdown-menu/preview/dropdown-menu.gif)
