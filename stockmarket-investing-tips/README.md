@@ -4,4 +4,4 @@ This website is a presentation on **Stock Market Investing Tips**. Click [here](
 
 ## Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/html-css-projects/blob/master/stockmarket-investing-tips/preview/stockmarket-investing-tips.gif)
