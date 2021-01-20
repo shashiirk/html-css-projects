@@ -4,4 +4,4 @@ This is a clone of **Instagram** sign up page. Click [here](https://codepen.io/s
 
 ## Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/html-css-projects/blob/master/instagram-signup-page/preview/instagram-signup-page.gif)
