@@ -1,6 +1,6 @@
 # TimesThen Website
 
-This is fictional news website named **TimesThen**.
+This is fictional news website named **TimesThen**. Click [here](https://times-then.netlify.app) to see it live.
 
 ## Preview
 
