@@ -4,4 +4,4 @@ This is a static website of a fictional hotel. It includes multiple web pages - 
 
 ## Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/html-css-projects/blob/master/hotel-website/preview/hotel-website.gif)
