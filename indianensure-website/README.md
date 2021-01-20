@@ -4,4 +4,4 @@ This is a static website of a fictional company **Indian Ensure** which provides
 
 ## Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/html-css-projects/blob/master/indianensure-website/preview/indianensure-website.gif)
